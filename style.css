@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(253, 251, 251);
+}
+
+#cabecalho {                 /*requisito*/
+  position: fixed;           /*requisito*/
+  top: 0;                    /*requisito*/
+  background-color: grey;  /*requisito*/
+  width: 100%;
+}
+
+main {
+  position: absolute;
+  top: 90px;
+}
+
+#minha_foto {                /*requisito*/
+  max-width: 300px;
+}
