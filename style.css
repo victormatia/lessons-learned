@@ -1,27 +1,79 @@
-body {
-  background-color: rgb(253, 251, 251);
+* {
+  margin: 0;
 }
 
-#cabecalho {                 /*requisito*/
-  position: fixed;           /*requisito*/
-  top: 0;                    /*requisito*/
-  background-color: grey;  /*requisito*/
+body {
+  background-color: rgb(253, 251, 251);
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#cabecalho {                 
+  position: fixed;           
+  top: 0;                    
+  background-color: grey;  
   width: 100%;
+  height: 60px;
   z-index: 2;
 }
 
+#cabecalho h1 {
+  color: white;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+#nav-header {
+  background-color: rgb(47, 47, 47);
+}
+
+#nav-header ul {
+  padding: 0;
+  margin-left: 20px;
+}
+
+#nav-header ul li {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
 main {
-  position: absolute;
-  top: 90px;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: 100px;
   z-index: 1;
 }
 
-#minha_foto {                /*requisito*/
-  max-width: 300px;
+#minha_foto {                
+  max-width: 200px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+#name {
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+#lessons {
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#licoes_aprendidas {
+  line-height: 30px;
 }
 
 #rodape {
-  position: fixed;
-  bottom: 0;
-  z-index: 3;
+  position: relative;
+  text-align: center;
 }
