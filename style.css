@@ -5,6 +5,7 @@
 body {
   background-color: rgb(253, 251, 251);
   font-family: 'Source Sans Pro', sans-serif;
+  height: 1100px;
   display: flex;
   flex-direction: column;
 }
@@ -28,6 +29,11 @@ body {
   background-color: rgb(47, 47, 47);
 }
 
+#nav-header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 #nav-header ul {
   padding: 0;
   margin-left: 20px;
@@ -44,8 +50,7 @@ main {
   width: 80%;
   margin: auto;
   position: relative;
-  top: 100px;
-  z-index: 1;
+  top: 30px;
 }
 
 #minha_foto {                
@@ -67,13 +72,60 @@ main {
   padding: 20px;
   margin-bottom: 20px;
   font-size: 20px;
+  text-align: center;
+}
+
+#lessons-left {
+  width: 50%;
+}
+
+#lessons-rigth {
+  width: 50%;
+}
+
+#title-lessons-rigth {
+  margin-bottom: 20px;
+}
+
+#title-lessons-left {
+  margin-bottom: 20px;
 }
 
 #licoes_aprendidas {
   line-height: 30px;
+  text-align: justify;
+}
+
+#licoes_a_aprender {
+  line-height: 30px;
+  text-align: justify;
+}
+
+#bloco1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+article p, aside p, article h2, aside h2 {
+  font-size: 20px;
+  text-align: justify;
+  margin: 10px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: rgb(175, 175, 175) solid 1px;
 }
 
 #rodape {
   position: relative;
+  bottom: 0;
+  background-color: rgb(224, 224, 224);
+  padding: 10px;
   text-align: center;
 }
